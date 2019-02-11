@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="2.playground.css">
+<meta name="description" content="Add CSS class to header on scroll">
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div id="box">Boom</div>
+<header class="clearHeader">
+</header>
+<script type="text/javascript">
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 50) {
+        $(".clearHeader").addClass("darkHeader");
+    } else {
+        $(".clearHeader").removeClass("darkHeader");
+    }
+});
+</script> 
+</body>
+</html>

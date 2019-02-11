@@ -1,0 +1,28 @@
+body {
+height: 2000px; /* Have something to scroll for */
+}
+
+/* Important code starts below */
+
+
+.clearHeader {
+  height:50px;
+  background:lightblue;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  
+  -webkit-transition: background 2s; /* For Safari 3.1 to 6.0 */
+  transition: background 2s;
+}
+
+.clearHeader.darkHeader {
+ background:#000;
+}
+.box{
+  width:400px;
+  height:400px;
+  color: red;
+  align-content: center;
+}
